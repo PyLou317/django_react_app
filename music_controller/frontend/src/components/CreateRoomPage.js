@@ -1,11 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class CreateRoomPage extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
+const CreateRoomPage = () => {
     return <p>This is the create room page</p>;
-  }
-}
+};
+
+export default CreateRoomPage;

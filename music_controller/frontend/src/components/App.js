@@ -1,22 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import { createRoot } from "react-dom/client";
 import HomePage from "./HomePage";
 
-// Define the App component to render HomePage
-const App = () => {
-  return (
-    <div>
-      <HomePage />
-    </div>
-  );
-};
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <HomePage />
+      </div>
+    );
+  }
+}
 
 const appDiv = document.getElementById("app");
-
-// Use createRoot to initialize the React root
-if (!appDiv._reactRootContainer) {
-  const root = createRoot(appDiv);
-  root.render(<App />);
-} else {
-  console.warn("Root container already initialized.");
-}
+const root = createRoot(appDiv); // Initialize the root for React rendering
+root.render(<App />); // Render the App component
