@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { createRoot } from "react-dom/client";
 import HomePage from "./HomePage";
+import CreateRoomPage from "./CreateRoomPage";
+import RoomJoinPage from "./RoomJoinPage";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <HomePage />
+            <HomePage />
       </div>
     );
   }
